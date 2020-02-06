@@ -46,7 +46,23 @@ class FoodHome extends StatelessWidget {
         body: Center(
           child: Text('Hello World') ,
         ),
-        drawer: Drawer(child: Text('Test nav text')),
+        drawer: Drawer(
+          semanticLabel: cLabel,
+          child: ListView(
+            padding: EdgeInsets.all(16.0),
+            children: [
+              UserAccountsDrawerHeader(
+                accountName: new Text(cAppTitle),
+                accountEmail: new Text(cEmailID),
+                currentAccountPicture: new CircleAvatar(
+                  backgroundImage: new NetworkImage(cSampleImage),
+                ),
+              ),
+              SizedBox(height: 100),
+              
+            ],
+          ),
+        ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
         floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.green,
