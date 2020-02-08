@@ -59,14 +59,29 @@ class FoodHome extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 100),
-              
+              ListTile(
+                leading: CircleAvatar(
+                  backgroundImage: NetworkImage(cSampleImage),
+                  backgroundColor: Colors.brown.shade300,
+                  // child: Text('Starter'),
+                ),
+                title: Text('Starter Food Menu'),
+              ),
+              ListTile(
+                leading: CircleAvatar(
+                  backgroundImage: NetworkImage(cSampleImage),
+                  backgroundColor: Colors.brown.shade300,
+                  // child: Text('Starter'),
+                ),
+                title: Text('Starter Food Menu'),
+              ),
             ],
           ),
         ),
-        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.green,
-          child: Icon(Icons.shopping_cart, color: Colors.blueGrey, size: 30.0),
+          backgroundColor: Colors.blueGrey,
+          child: Icon(Icons.shopping_cart, color: Colors.blue, size: 30.0),
         ),
         bottomNavigationBar: BottomAppBar(
           shape: CircularNotchedRectangle(),
